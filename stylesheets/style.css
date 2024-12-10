@@ -1,0 +1,59 @@
+/*NavBar Styles*/
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color:aliceblue;
+}
+#navigation a{
+    text-decoration: none;
+    color:aliceblue;
+    display: flex;
+    align-items: center;
+}
+#navigation a p{
+    margin-left: 10px;
+}
+
+#navigation a img{
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+}
+.Nav-item{
+    display: flex;
+}
+.Nav-item li {
+    list-style: none;
+    padding: 10px;
+}
+
+/*Footer Styles*/
+
+/*Cursor styles*/
+    /* Custom cursor style */
+    .custom-cursor {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+        pointer-events: none; /* Prevent cursor from interacting with elements */
+        z-index: 9999; /* Ensure the cursor stays on top */
+        transform: translate(-50%, -50%); /* Center the cursor */
+        transition: all 0.1s ease; /* Smooth cursor movement */
+      }
+      .custom-cursor.hovered {
+        background-color: blue; /* Change color when hovering */
+        transform: scale(1.5); /* Increase size on hover */
+    }
